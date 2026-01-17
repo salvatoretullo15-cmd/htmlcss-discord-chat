@@ -4,6 +4,36 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+    max-height: 10%;
+    border-radius: 50%;
+}
+
+.sidebar
+{
+    max-width: 24%;
+    background-color: rgba(0, 0, 0, 0.829);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+body
+{
+    width: 512px;
+    height: 100%;
+    margin:0 auto
+}
+
+.content
+{
+    max-width: 100%;
+    border-style: ridge;
+    
+}
+
 header
 {
     height: 10px;
@@ -12,28 +42,15 @@ header
 
 }
 
-.wrap
-{
-    max-width: 512px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
 
 .mec-wrap
 {
-    flex-grow: 1;
+    width: 100%;
     border-style: dotted;
     background-color: rgba(255, 255, 255, 0.87);
     display: flex;
     overflow: hidden;
-}
 
-.sidebar
-{
-    width: 60px;
-    background-color: rgba(0, 0, 0, 0.829);
-    
 }
 
 main
@@ -43,18 +60,44 @@ main
     background-color: rgb(255, 255, 255);
 }
 
+
+.list-flex 
+{
+    max-width: 15%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction:column;
+}
+
+.porcorik
+{
+    display: flex;
+    max-width: 15%;
+    justify-content: flex-start;
+    flex-direction:column;
+}
+
+
 footer
 {
+    
     .underbar
     {
         height: 70px;
+        color: white;
         display: flex;
+        text-align: center;
         align-items: center;
         justify-content: space-evenly;
         background-color: rgba(48, 45, 45, 0.808);
-        color: white;
-        text-align: center;
+        
+        .foto-profilo
+        {
+            max-width:5%;
 
+        }
+    
     }
     
 }
