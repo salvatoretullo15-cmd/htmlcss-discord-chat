@@ -1,3 +1,4 @@
+/*regole base iniziali*/
 :root{
     --dis-sidebar-bg:#141318;
     --dis-main-bg:#1c1d22;
@@ -18,6 +19,8 @@ img{
     border-radius: 50%;
 }
 
+/*zona costruzione del corpo principale*/
+
 body{
     max-width: 512px;
     height: 100%;
@@ -32,7 +35,58 @@ main{
     margin-top: 1rem;
     border-top-left-radius: 1rem;
     background-color: var(--dis-main-bg);
-    color:grey
+    color:grey;
+
+    header{
+        & > div {
+            display:flex;
+            gap:1rem;
+        }
+        .add-friendship-btn{
+            flex-grow: 1;
+            border-radius: 0.75rem;
+        }
+        .search-btn{
+            border-radius: 50%;
+        }
+        button{
+            padding: 0.45rem 0.45rem;
+            background-color: var(--dis-primary-bg);
+            border-style: none;
+            color: var(--dis-white-bg);
+        }
+        h2{
+            margin-bottom: 0.5rem;
+            color: var(--dis-white-bg);
+        }
+    }
+}
+
+.mex{
+
+    .immagine-profilo{
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+
+        .messaggi-details{
+            flex-grow: 1;
+            font-size: medium;
+
+            h3{
+                font-size: large;
+            }
+        }
+
+        img{
+            width:40px;
+            height: 40px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+    }
 }
 
 .sidebar{
