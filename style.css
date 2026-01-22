@@ -136,9 +136,23 @@ main{
 }
 
 footer{
-    height: 80px;
+    height: 200px;
     background-color: var(--dis-footer-bg);
-    flex-shrink: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    button{
+        background-color: transparent;
+        color: var(--dis-white-bg);
+        border-style: none;
+        display: flex;
+        flex-direction: column;
+
+        i{
+            font-size: medium;
+        }
+    }
 }
 
 
